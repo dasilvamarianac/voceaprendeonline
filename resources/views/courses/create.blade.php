@@ -31,7 +31,7 @@
                         {!! Form::close() !!}
                     </div>
                 </div>
-                @if ($errors->has('card-body'))
+                @if ($errors->any())
                     <ul class="alert alert-danger">
                         @foreach($errors->all() as $error)
                             <li>{{$error}}</li>
